@@ -1,5 +1,5 @@
 import Progenitor
-class Niño:
+class Peque:
     def __init__(self, 
     id=int, 
     nombre=str,
