@@ -18,16 +18,6 @@ def crear_tabla_x4(conn):
     except Exception as e:
         print(e)
 
-# def crear_tabla_x2(conn):
-#     try:
-#         cursor = conn.cursor()
-#         cursor.execute(
-#             '''CREATE TABLE IF NOT EXISTS alumnos (dni varchar(10) PRIMARY KEY, nombre varchar(200)) '''
-#         )
-#         conn.commit()
-#         print('La tabla ha sido creada x4')
-#     except Exception as e:
-#         print(e)
 # def insertar_registro_tabla_x2(conn):
 #     cursor = conn.cursor()
 #     cursor.execute("INSERT into alumnos (dni,nombre) values('xxx','paco')")
