@@ -1,5 +1,5 @@
 import sqlite3
-
+from Classes.Peque import * 
 def crear_conexion():
     try:
         conn = sqlite3.connect('./mydatabase.db')
@@ -7,7 +7,7 @@ def crear_conexion():
     except Exception as e:
         print(e)
 
-def crear_tabla_x4(conn):
+def crear_tabla(conn):
     try:
         cursor = conn.cursor()
         cursor.execute(
@@ -18,10 +18,12 @@ def crear_tabla_x4(conn):
     except Exception as e:
         print(e)
 
-# def insertar_registro_tabla_x2(conn):
-#     cursor = conn.cursor()
-#     cursor.execute("INSERT into alumnos (dni,nombre) values('xxx','paco')")
-#     conn.commit()
+def insertar_registro(conn, Peque):
+    cursor = conn.cursor()
+    cursor.execute(
+        "INSERT into Peques id int(15) PRIMARY KEY, NOMBRE varchar(60), HORAS int(10), PRIVADO int(200), cita date(100) values('xxx','paco')")
+    conn.commit()
+
 # def actualizar_registro(conn):
 #     cursor = conn.cursor()
 #     cursor.execute('''
@@ -42,8 +44,9 @@ def crear_tabla_x4(conn):
 #     conn.commit()
 
 conn = crear_conexion()
-#crear_tabla_x2(conn)
-crear_tabla_x4(conn)
+crear_tabla(conn)
+insertar_registro(conn)
+
 # insertar_registro_tabla_x2(conn)
 # mostrar_registro(conn)
 # actualizar_registro(conn)

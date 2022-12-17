@@ -1,4 +1,5 @@
-from Progenitor import Progenitor_class
+from Classes.Progenitor import Progenitor_class
+from API.API import *
 class Peque_class:
     def __init__(self,
     id=int,
@@ -15,11 +16,11 @@ class Peque_class:
         self.progenitor = Progenitor_class
         self.progenitor2 = Progenitor_class
 
-    def despedir():
-        print('Adios')
-
-        
-Progenitor_class.saludar()
+    def crear_niño():
+        pass
+    def eliminar_niño():
+        pass
+    
 # print('Peque')
 # progenitor1 = Progenitor('papá', '6623923i408'),
 # progenitor2 = Progenitor('Mamá', '798719123'),
