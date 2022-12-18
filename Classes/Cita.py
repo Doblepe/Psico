@@ -7,6 +7,7 @@ class Cita:
         self.peque = peque
         self.responsable = responsable
         self.fecha_actual = datetime.now()
+        
 
 fecha_actual = datetime.now()
 fecha_actual = datetime.strftime(fecha_actual, '%H:%M:%S --> %d/%B/%Y')
