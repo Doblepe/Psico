@@ -3,7 +3,6 @@ import tkinter as tk
 from API.API import *
 from API.BBDD import *
 from datetime import datetime
-from tkinter import *
 
 # class Prueba:
 #     def __init__(self, nombre, horas, privado, cita) -> None:
@@ -41,6 +40,8 @@ from tkinter import *
 #   print(x)
 
 # # print(peque1)
+
+
 
 
 

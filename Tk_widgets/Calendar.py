@@ -9,22 +9,24 @@ actual_day = int(fecha_actual[0])
 actual_month = int(fecha_actual[1])
 actual_year = int(fecha_actual[2])
 
-
 # Create Object
 root = Tk()
 # Set geometry
 root.geometry("400x400")
 # Add Calendar
-cal = Calendar(root, selectmode='day',
+calendar = Calendar(root, selectmode='day',
                year=actual_year, month=actual_month,
                day=actual_day)
 
-cal.pack(pady=20)
+calendar.pack(pady=20)
 
 
 def grad_date():
-    date.config(text="Selected Date is: " + cal.get_date())
-
+    date.config(text="Selected Date is: " + calendar.get_date())
+    selected_day = calendar.get_date()
+    
+    return selected_day
+    
 
 # Add Button and Label
 Button(root, text="Get Date",
